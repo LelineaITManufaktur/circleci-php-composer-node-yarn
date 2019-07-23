@@ -14,7 +14,7 @@ RUN set -x \
  && docker-php-ext-install mbstring curl json intl gd xml zip bz2 opcache pdo_mysql pcntl exif bcmath \
  && echo "date.timezone = Europe/Berlin" > /usr/local/etc/php/conf.d/timezone.ini \
  && echo "memory_limit = -1" > /usr/local/etc/php/conf.d/memory.ini  \
- && wget -O /usr/local/bin/composer https://getcomposer.org/download/1.6.3/composer.phar \
+ && wget -O /usr/local/bin/composer https://getcomposer.org/download/1.8.6/composer.phar \
  && chmod +x /usr/local/bin/composer \
  && apt-get autoclean -y \
  && apt-get --purge autoremove -y \
