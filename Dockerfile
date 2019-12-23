@@ -10,8 +10,8 @@ RUN set -x \
  && apt-get install -y git zip libcurl4-gnutls-dev libicu-dev \
                        libfreetype6-dev libjpeg-dev libpng-dev libxml2-dev \
                        libbz2-dev libc-client-dev libkrb5-dev mariadb-client \
-                       nodejs yarn libzip-dev \
- && docker-php-ext-install mbstring curl json intl gd xml zip bz2 opcache pdo_mysql pcntl exif bcmath \
+                       nodejs yarn libzip-dev libonig-dev \
+ && docker-php-ext-install curl json intl gd xml zip bz2 opcache pdo_mysql pcntl exif bcmath \
  && echo "date.timezone = Europe/Berlin" > /usr/local/etc/php/conf.d/timezone.ini \
  && echo "memory_limit = -1" > /usr/local/etc/php/conf.d/memory.ini  \
  && wget -O /usr/local/bin/composer https://getcomposer.org/download/1.9.1/composer.phar \
