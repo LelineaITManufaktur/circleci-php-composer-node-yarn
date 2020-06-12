@@ -1,4 +1,4 @@
-FROM php:7.4.1
+FROM php:7.4.2
 
 RUN set -x \
  && apt-get update -y \
